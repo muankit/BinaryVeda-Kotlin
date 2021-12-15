@@ -12,7 +12,8 @@
         android:layout_marginStart="@dimen/image_margin_start"
         tools:src="@drawable/ic_image1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:id="@+id/item_image_title"

@@ -18,7 +18,8 @@
             android:layout_marginStart="@dimen/agc_margin_start"
             android:src="@drawable/ic_agc_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guideline_top"/>
+            app:layout_constraintTop_toBottomOf="@id/guideline_top"
+            android:contentDescription="@string/logo" />
 
         <ImageView
             android:id="@+id/vector_image"
@@ -28,7 +29,8 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_vector_image"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/agc_dummy_txt" />
+            app:layout_constraintTop_toBottomOf="@id/agc_dummy_txt"
+            android:contentDescription="@string/image" />
 
         <TextView
             android:id="@+id/lorem_ipsum_txt"
@@ -66,7 +68,8 @@
                 android:layout_marginTop="@dimen/register_arrow_margin_top"
                 android:layout_marginEnd="@dimen/register_arrow_margin_end"
                 android:layout_marginBottom="@dimen/register_arrow_margin_bottom"
-                android:src="@drawable/ic_arrow_right" />
+                android:src="@drawable/ic_arrow_right"
+                android:contentDescription="@string/arrow" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +79,7 @@
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/barlow_condensed_extra_light"
                 android:letterSpacing="-0.04"
-                android:text="register"
+                android:text="@string/register"
                 android:textColor="@color/white_two"
                 android:textSize="30sp" />
 
@@ -90,7 +93,7 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/barlow_condensed_extra_light"
             android:letterSpacing="-0.04"
-            android:text="me as a collector"
+            android:text="@string/me_as_a_collector"
             android:textColor="@color/black_two"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="@id/register_btn"
@@ -107,21 +110,23 @@
             android:gravity="bottom"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/register_btn">
+            app:layout_constraintTop_toBottomOf="@id/register_btn"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="12dp"
                 android:layout_height="11dp"
                 android:layout_marginEnd="11dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/ic_arrow_right_cornflower" />
+                android:src="@drawable/ic_arrow_right_cornflower"
+                android:contentDescription="@string/arrow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/barlow_condensed_extra_light"
                 android:letterSpacing="-0.04"
-                android:text="track my application"
+                android:text="@string/track_my_application"
                 android:textColor="@color/corn_flower_blue"
                 android:textSize="30sp" />
 
@@ -149,7 +154,8 @@
             app:layout_constraintEnd_toStartOf="@id/instagram"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@id/main_rv" />
+            app:layout_constraintTop_toBottomOf="@id/main_rv"
+            android:contentDescription="@string/facebook" />
 
         <ImageView
             android:id="@+id/instagram"
@@ -161,7 +167,8 @@
             app:layout_constraintBottom_toBottomOf="@id/facebook"
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/facebook"
-            app:layout_constraintTop_toTopOf="@id/facebook" />
+            app:layout_constraintTop_toTopOf="@id/facebook"
+            android:contentDescription="@string/instagram" />
 
         <View
             android:id="@+id/divider1"
@@ -185,7 +192,8 @@
             android:layout_marginEnd="@dimen/agc_horizontal_margin_end"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@id/divider1" />
+            app:layout_constraintTop_toBottomOf="@id/divider1"
+            android:contentDescription="@string/agc_image" />
 
         <TextView
             android:id="@+id/about_us"

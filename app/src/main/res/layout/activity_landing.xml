@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_agc_abbreviated"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toTopOf="@id/guideline_top" />
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            android:contentDescription="@string/logo" />
 
         <ImageView
             android:id="@+id/hamburger_icon"
@@ -29,7 +30,8 @@
             android:layout_marginEnd="@dimen/hamburger_margin_end"
             android:src="@drawable/ic_hamburger"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
-            app:layout_constraintTop_toTopOf="@id/guideline_top" />
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            android:contentDescription="@string/hamburger_icon" />
 
         <ImageView
             android:id="@+id/add_icon"
@@ -39,7 +41,8 @@
             android:layout_marginEnd="@dimen/add_icon_margin_end"
             android:src="@drawable/ic_add"
             app:layout_constraintEnd_toStartOf="@id/hamburger_icon"
-            app:layout_constraintTop_toTopOf="@id/guideline_top" />
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            android:contentDescription="@string/add_icon" />
 
         <ImageView
             android:id="@+id/profile_icon"
@@ -49,7 +52,8 @@
             android:layout_marginEnd="@dimen/profile_icon_margin_end"
             android:src="@drawable/profile_custom_drawable"
             app:layout_constraintEnd_toStartOf="@id/add_icon"
-            app:layout_constraintTop_toTopOf="@id/guideline_top" />
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            android:contentDescription="@string/profile" />
 
         <ImageView
             android:id="@+id/user_avatar"
@@ -61,7 +65,8 @@
             android:src="@drawable/ic_avatar"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@id/agc_logo" />
+            app:layout_constraintTop_toBottomOf="@id/agc_logo"
+            android:contentDescription="@string/user_avatar" />
 
         <ImageView
             android:id="@+id/upload_img"
@@ -72,14 +77,15 @@
             app:layout_constraintBottom_toTopOf="@id/upload_txt"
             app:layout_constraintEnd_toStartOf="@id/user_avatar"
             app:layout_constraintTop_toTopOf="@id/user_avatar"
-            app:layout_constraintVertical_chainStyle="packed" />
+            app:layout_constraintVertical_chainStyle="packed"
+            android:contentDescription="@string/upload_icon" />
 
         <TextView
             android:id="@+id/upload_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
-            android:text="Upload"
+            android:text="@string/upload"
             android:textColor="@color/corn_flower_blue_two"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@id/user_avatar"
@@ -96,14 +102,15 @@
             app:layout_constraintBottom_toTopOf="@id/edit_txt"
             app:layout_constraintStart_toEndOf="@id/user_avatar"
             app:layout_constraintTop_toTopOf="@id/user_avatar"
-            app:layout_constraintVertical_chainStyle="packed" />
+            app:layout_constraintVertical_chainStyle="packed"
+            android:contentDescription="@string/edit_icon" />
 
         <TextView
             android:id="@+id/edit_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
-            android:text="Edit"
+            android:text="@string/edit"
             android:textColor="@color/corn_flower_blue_two"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@id/user_avatar"
@@ -117,7 +124,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_extra_light"
             android:letterSpacing="0"
-            android:text="john.doe"
+            android:text="@string/john_doe"
             android:textColor="@color/black"
             android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
@@ -132,7 +139,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="@dimen/dashboard_txt_margin_top"
             android:fontFamily="@font/barlow_condensed_light"
-            android:text="My dashboard"
+            android:text="@string/my_dashboard"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
@@ -146,7 +153,8 @@
             android:thumb="@drawable/switch_track"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintTop_toBottomOf="@id/user_name_txt"
-            app:track="@drawable/switch_bg" />
+            app:track="@drawable/switch_bg"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <View
             android:id="@+id/divider1"
@@ -165,7 +173,7 @@
             android:layout_marginTop="@dimen/follower_margin_top"
             android:fontFamily="@font/barlow_condensed_light"
             android:letterSpacing="0"
-            android:text="2.3K"
+            android:text="@string/_2_3k"
             android:textColor="@color/black"
             android:textSize="29sp"
             app:layout_constraintEnd_toStartOf="@id/artwork_count"
@@ -179,7 +187,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
             android:letterSpacing="0"
-            android:text="Followers"
+            android:text="@string/followers"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/follower_count"
@@ -192,7 +200,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
             android:letterSpacing="0"
-            android:text="50"
+            android:text="@string/_50"
             android:textColor="@color/black"
             android:textSize="29sp"
             app:layout_constraintBottom_toBottomOf="@id/follower_count"
@@ -206,7 +214,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
             android:letterSpacing="0"
-            android:text="Artworks"
+            android:text="@string/artworks"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/artwork_count"
@@ -219,7 +227,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
             android:letterSpacing="0"
-            android:text="21"
+            android:text="@string/_21"
             android:textColor="@color/black"
             android:textSize="29sp"
             app:layout_constraintBottom_toBottomOf="@id/artwork_count"
@@ -233,7 +241,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_condensed_light"
             android:letterSpacing="0"
-            android:text="Exhibitions"
+            android:text="@string/exhibitions"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/exhibitions_count"
@@ -260,7 +268,7 @@
             android:layout_marginEnd="@dimen/heart_share_cursor_margin_between"
             android:fontFamily="@font/barlow_extra_light"
             android:letterSpacing="0"
-            android:text="120"
+            android:text="@string/_120"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/cursor_count"
@@ -277,7 +285,8 @@
             android:src="@drawable/ic_heart"
             app:layout_constraintBottom_toBottomOf="@id/heart_count"
             app:layout_constraintEnd_toStartOf="@id/heart_count"
-            app:layout_constraintTop_toTopOf="@id/heart_count" />
+            app:layout_constraintTop_toTopOf="@id/heart_count"
+            android:contentDescription="@string/heart_icon" />
 
         <TextView
             android:id="@+id/cursor_count"
@@ -286,7 +295,7 @@
             android:layout_marginEnd="@dimen/heart_share_cursor_margin_between"
             android:fontFamily="@font/barlow_extra_light"
             android:letterSpacing="0"
-            android:text="43K"
+            android:text="@string/_43k"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@id/heart_count"
@@ -303,7 +312,8 @@
             android:src="@drawable/ic_cursor"
             app:layout_constraintBottom_toBottomOf="@id/cursor_count"
             app:layout_constraintEnd_toStartOf="@id/cursor_count"
-            app:layout_constraintTop_toTopOf="@id/cursor_count" />
+            app:layout_constraintTop_toTopOf="@id/cursor_count"
+            android:contentDescription="@string/cursor_icon" />
 
         <TextView
             android:id="@+id/share_count"
@@ -311,7 +321,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/barlow_extra_light"
             android:letterSpacing="0"
-            android:text="2.3K"
+            android:text="@string/_2_3k"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@id/cursor_count"
@@ -328,7 +338,8 @@
             android:src="@drawable/ic_share"
             app:layout_constraintBottom_toBottomOf="@id/share_count"
             app:layout_constraintEnd_toStartOf="@id/share_count"
-            app:layout_constraintTop_toTopOf="@id/share_count" />
+            app:layout_constraintTop_toTopOf="@id/share_count"
+            android:contentDescription="@string/share_icon" />
 
         <LinearLayout
             android:id="@+id/pallette_container"
@@ -359,7 +370,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/barlow_condensed_medium"
                     android:letterSpacing="0"
-                    android:text="pallette"
+                    android:text="@string/pallette"
                     android:textColor="@color/white_two"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -411,7 +422,8 @@
             app:tabIndicatorGravity="bottom"
             app:tabIndicatorHeight="1dp"
             app:tabSelectedTextColor="@color/black"
-            app:tabTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2" />
+            app:tabTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <com.binaryveda_kotlin.utils.CustomViewPager
             android:id="@+id/view_pager"
